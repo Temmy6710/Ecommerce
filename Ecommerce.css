@@ -44,7 +44,7 @@
     border-radius: 50%;
 }
 #header{
-    height: 90vh;
+    height: 100vh;
     text-align: center;
     position: relative;
 }
@@ -75,7 +75,7 @@
     z-index: -1;
 }
 #text{
-    padding-top: 30vh;
+    padding-top: 40vh;
     color: white;
 }
 #walk{
@@ -175,13 +175,35 @@
     margin: 150px 0;
 }
 #contactUs{
+    padding: 20px;
+    width: 80%;
+    margin: 30px  auto;
+    background:linear-gradient(120deg, black, rgb(129, 127, 127),rgb(177, 176, 176)  ) ;
+    color: white;
+}
+#contactUs h2{
+    text-align: center;
+}
+#request{
+    padding-bottom: 15px;
+    margin-right: 20px;
+}
+#contactUs label{
+    display: block;
+}
+#request input[type="text"], input[type="email"], #request textarea{
+    padding: 8px;
+    width: 100%;
+    margin: auto;
+}
+#contactUsFoot{
     display: flex;
     justify-content: space-evenly;
     color: white;
     background-color: black;
     height: 45vh;
 }
-#contactUs img{
+#contactUsFoot img{
     margin-top: 20px;
 }
 #contact{
