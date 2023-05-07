@@ -15,16 +15,17 @@
                     Shoes<span id="IO">IO</span>
                 </h1>
             </div>
+            <button id="dropper" onclick="displayLink()">&#8801;</button>
             <div id="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Products</a>
-                <a href="">Contact Us</a>
-                <a href="" id="cart">
-                    <img src="./icons8-shopping-cart-30.png" alt="">
-                    <div id="circle">1</div>
-                </a>
+                <a href="#" class="link" onclick="home()">Home</a>
+                <a href="#" class="link" onclick="about()">About</a>
+                <a href="#" class="link" onclick="product()">Products</a>
+                <a href="#" class="link" onclick="contactUs()">Contact Us</a>
             </div>
+            <a href="#" id="cart">
+                <img src="./icons8-shopping-cart-30.png" alt="">
+                <div id="circle">1</div>
+            </a>
         </div>
         <div id="header">
             <div id="text">
@@ -33,26 +34,80 @@
                 <button id="btn">Explore</button>
             </div>
         </div>
-        <div id="content">
-            <div id="product">
-                <img src="./pexels-mstudio-1240892.jpg" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta.</p>
-                <button id="conBtn">View</button>
+        <div id="productSec">
+            <h1>Available Products</h1>
+            <div id="content">
+                <div id="product">
+                    <img src="./pexels-mstudio-1240892.jpg" alt="">
+                   <h3>Shoe Title</h3>
+                    <button id="conBtn" onclick="view()">View</button>
+                    <div id="popup">
+                        <div id="popupContent">
+                            <div id="popupHeader">
+                                <span id="close" onclick="Close()">&times;</span>
+                                <h2>✨Shoes!!!✨</h2>
+                            </div>
+                            <div id="popupBody">
+                                <img src="./pexels-mstudio-1240892.jpg" alt="">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, veritatis dignissimos praesentium facere eius exercitationem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus unde culpa sint, assumenda iste nobis? Inventore incidunt earum cum debitis quos et consequatur? Ipsa, maiores saepe? Laboriosam nostrum ullam consequatur porro magni perferendis odit iusto? Esse, eligendi. Voluptatibus laboriosam fuga nostrum perferendis itaque quibusdam, ea sapiente nemo. Nemo, assumenda molestiae.</p>
+                            </div>
+                            <div id="popupFooter">
+                                <button id="conBtn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product">
+                    <img src="./pexels-frans-van-heerden-847371.jpg" alt="">
+                   <h3>Shoe Title</h3>
+                    <button id="conBtn" onclick="view()">View</button>
+                    <div id="popup">
+                        <div id="popupContent">
+                            <div id="popupHeader">
+                                <span id="close" onclick="Close()">&times;</span>
+                                <h2>✨Shoes!!!✨</h2>
+                            </div>
+                            <div id="popupBody">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, veritatis dignissimos praesentium facere eius exercitationem?</p>
+                            </div>
+                            <div id="popupFooter">
+                                <button id="conBtn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product">
+                    <img src="./pexels-peter-patel-637076.jpg" alt="">
+                    <h3>Shoe Title</h3>
+                    <button id="conBtn">View</button>
+                </div>
+                <div id="product">
+                    <img src="./pexels-peter-patel-637076.jpg" alt="">
+                    <h3>Shoe Title</h3>
+                    <button id="conBtn">View</button>
+                </div>
             </div>
-            <div id="product">
-                <img src="./pexels-frans-van-heerden-847371.jpg" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta.</p>
-                <button id="conBtn">View</button>
-            </div>
-            <div id="product">
-                <img src="./pexels-peter-patel-637076.jpg" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta.</p>
-                <button id="conBtn">View</button>
-            </div>
-            <div id="product">
-                <img src="./pexels-peter-patel-637076.jpg" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta.</p>
-                <button id="conBtn">View</button>
+            <div id="otherProducts">
+                <div id="product">
+                    <img src="./pexels-peter-patel-637076.jpg" alt="">
+                    <h3>Shoe Title</h3>
+                    <button id="conBtn">View</button>
+                </div>
+                <div id="product">
+                    <img src="./pexels-peter-patel-637076.jpg" alt="">
+                    <h3>Shoe Title</h3>
+                    <button id="conBtn">View</button>
+                </div>
+                <div id="product">
+                    <img src="./pexels-peter-patel-637076.jpg" alt="">
+                    <h3>Shoe Title</h3>
+                    <button id="conBtn">View</button>
+                </div>
+                <div id="product">
+                    <img src="./pexels-peter-patel-637076.jpg" alt="">
+                    <h3>Shoe Title</h3>
+                    <button id="conBtn">View</button>
+                </div>
             </div>
         </div>
         <div id="aboutUs">
