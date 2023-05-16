@@ -1,6 +1,6 @@
 var header = document.getElementById('header');
 var productSec = document.getElementById('productSec');
-var otherProducts = document.getElementById('otherProducts')
+// var otherProducts = document.getElementById('otherProducts')
 var aboutUs = document.getElementById('aboutUs');
 var contacttUs = document.getElementById('contactUs');
 var popup = document.getElementById('popup');
@@ -41,7 +41,7 @@ function home(){
     console.log('working');
     header.style.display = 'block';
     productSec.style.display = 'block';
-    otherProducts.style.display = 'none'
+    // otherProducts.style.display = 'none'
     aboutUs.style.display = 'none';
     contacttUs.style.display = 'none';
 }
@@ -53,12 +53,12 @@ function about(){
     contacttUs.style.display = 'none';
 }
 function product(){
-    console.log('working');
     header.style.display = 'none';
     productSec.style.paddingTop = '10vh';
     productSec.style.display = 'block';
-    otherProducts.style.display = 'flex'
+    // otherProducts.style.display = 'flex'
     aboutUs.style.display = 'none';
+    console.log('working');
     contacttUs.style.display = 'none';
 }
 function contactUs(){
@@ -168,7 +168,8 @@ function updateCart(){
                                                     <span id="price">${cartItems[i].price.toFixed(2)}</span>
                                                 </div>
                                             </div> 
-                                        </div>`
+                                        </div>
+                                        <hr>`
     }
     if (cartItems.length == 0){
         cartlength.style.display = 'none'
@@ -266,4 +267,29 @@ function decrease(id){
         cartItems[id].price = iniprice;
     }
     updateCart();
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlide(n){
+    showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+function showSlides(n){
+    console.log('hmmm')
+    let i;
+    let slide = document.getElementsByClassName('slide')
+    if (n > slide.length){
+        slideIndex = 1
+    }
+    if(n < 1){
+        slideIndex = slide.length
+    }
+    for (i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+    }
+    slide[slideIndex-1].style.display = "block";
 }
